@@ -30,7 +30,8 @@ To clean the dataSet the following steps were done:
 2. Merged the training and test set into a single set
 3. Named the columns using the feature names
 4. Transformed the acitivity into a factor with the description names
-5. Binded all the data X, Y and subject into a single data.fram
+5. Binded all the data X, Y and subject into a single data.frame
+6. Using the names selected only the features related to mean() and std()
 
 The output variable for this transformation is the tidyDataSet
 
