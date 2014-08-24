@@ -25,6 +25,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 
 ## Analysis description
 To clean the dataSet the following steps were done:
+
 1. Loaded the training and test sets into variables (X\_set, Y\_set and subjectSet) and the feature and activity names located in features.txt and activity\_labels.txt
 2. Merged the training and test set into a single set
 3. Named the columns using the feature names
@@ -34,6 +35,7 @@ To clean the dataSet the following steps were done:
 The output variable for this transformation is the tidyDataSet
 
 To make the analysis were done the following steps:
+
 1. Splitted the tidyDataSet using the columns subjectID and activity.
 2. Used lapply to get the mean for each column
 3. Restored into a single data.frame table.
