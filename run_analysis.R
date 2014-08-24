@@ -1,4 +1,17 @@
-# Blah
+## Gustavo Garcia
+## 24 august 2014
+## Coursera's Getting and Cleaning data
+## Programming Project
+
+#############################################
+##Description
+# You should create one R script called run_analysis.R that does the following. 
+
+# Merges the training and the test sets to create one data set.
+# Extracts only the measurements on the mean and standard deviation for each measurement. 
+# Uses descriptive activity names to name the activities in the data set
+# Appropriately labels the data set with descriptive variable names. 
+# Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
 
 #############################################
 # Clean the environment before starting the work
@@ -79,6 +92,8 @@ analysisSet <- do.call("rbind",analysisSet)
 # Get subjectID and activity back into columns
 subjectActivity <- do.call("rbind", strsplit(rownames(analysisSet),'\\.'))
 analysisSet <- cbind(subjectActivity,analysisSet)
+colnames(analysisSet)[1] <- "subjectID"
+colnames(analysisSet)[2] <- "activity"
 
 # Printing data into file
 write.table(analysisSet, row.names = FALSE, file = "output.txt")
