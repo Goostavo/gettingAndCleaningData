@@ -1,7 +1,7 @@
 Codebook for the variables generated
 ======================
 
-This codebook extend the feature descriptions locate on the file features.info.txt contained on the dataset's package.
+**This codebook extends the feature descriptions located on the file features\_info.txt contained on the dataset's package.**
 
 ## Output Variables
 
